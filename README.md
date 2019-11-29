@@ -7,6 +7,7 @@ It runs on spark version Spark-2.2 or above.
 In the find_filename.py python file one needs to mention the orc file path and the column filter value in pyspark dataframe format, please file below the sample:
 
 orc file path: hdfs://nnha/user/lokesh/output/
+
 column filter to be used in pyspark dataframe format: A['cosName']=='#Default COS#'
 
 ################################################################################33
