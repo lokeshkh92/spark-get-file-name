@@ -7,5 +7,5 @@ def filename(path):
 
 sourceFile = udf(filename, StringType())
 spark = SparkSession.builder.appName("Find FileName").getOrCreate()
-A = spark.read.orc('output/ss7_model/map')
-A.filter(A['cosName']=='#Default COS#').select(sourceFile(input_file_name())).show(20,False)
+A = spark.read.orc('<orc file path>')
+A.filter(<column filter to be used>).select(sourceFile(input_file_name())).show(20,False)
