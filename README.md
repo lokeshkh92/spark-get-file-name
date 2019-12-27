@@ -15,6 +15,7 @@ Software Dependencies:
 
 
 ##################################################################################
+
 Below is the command to submit the spark job:
 
 spark2-submit --master yarn --deploy-mode client --executor-memory=4g --num-executors=3 --executor-cores=2 --driver-memory=2g find_filename.py
